@@ -147,6 +147,7 @@ tbl_trips='CREATE TABLE trips (
 	shape_id INTEGER
 	wheelchair_accessible INTEGER DEFAULT 0
 	bikes_allowed INTEGER DEFAULT 0
+ 	vehicle_category_id TEXT
 	
 	FOREIGN KEY (route_id) 		REFERENCES routes (route_id) 			ON DELETE NO ACTION ON UPDATE NO ACTION
 	FOREIGN KEY (service_id) 	REFERENCES calendar_dates (service_id) 	ON DELETE NO ACTION ON UPDATE NO ACTION
